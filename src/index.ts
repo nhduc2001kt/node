@@ -6,7 +6,7 @@ dotenv.config();
 
 const jsonParser = bodyParser.json()
 const app: Express = express();
-const port = 3005;
+const port = 80;
 
 app.get('/', (req: Request, res: Response) => {
   const ipAddress = req.socket.remoteAddress;
